@@ -1,0 +1,25 @@
+{
+  "name": "stocktrack",
+  "version": "1.0.0",
+  "description": "Keep track of your stocks ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanDaManTran/stockTrack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanDaManTran/stockTrack/issues"
+  },
+  "homepage": "https://github.com/DanDaManTran/stockTrack#readme",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "moment": "^2.22.2",
+    "xlsx": "^0.14.0",
+    "yahoo-finance": "^0.3.5"
+  }
+}
