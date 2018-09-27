@@ -3,11 +3,7 @@ const XLSX = require('xlsx');
 const Promise = require('bluebird');
 const moment = require('moment');
 
-let excelKey = {
-	location: './stock.xlsx',
-	tranSheet: 'transaction',
-	checkSheet: 'dailyCheck'
-};
+const excelKey = require('./config.json');
 
 let workbook = XLSX.readFile(excelKey.location);
 let transactionData = XLSX.utils.sheet_to_json(workbook.Sheets[excelKey.tranSheet]);
@@ -80,6 +76,6 @@ current.then(()=>{
 		skipHeader: true,
 		origin: -1
 	});
-	
+
 	XLSX.writeFile(workbook, excelKey.location);
 });
